@@ -3,7 +3,7 @@
 Pre-requisites:
 To setup the application, following are the pre-requisites:
 - _JDK 1.8_
-- _Elasticsearch 5.5.0_
+- _Elasticsearch 5.5.0_ (set the cluster name in application.properties file as in your elasticsearch.yml)
 - _Maven 3.6.0_
 
 To run application locally, the command is: 

@@ -58,5 +58,4 @@ API details:
      }`
      
 3. API to delete customers:
-     
           `curl -X DELETE http://localhost:8080/customer/delete/3`

@@ -15,7 +15,9 @@ public class ApplicationInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {
-        log.info("Requested Url : " + request.getRequestURL() + "\nParams : " + request.getParameterMap() + "\n");
+        String informationString = "Requested Url : " + request.getRequestURL() + "\n";
+        if (!request.getParameterMap().isEmpty()) informationString += "Params : " + request.getParameterMap() + "\n";
+        log.info(informationString);
         return true;
     }
 }
